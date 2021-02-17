@@ -34,7 +34,7 @@ SELECT * FROM locations; \
 
 ### Del 3
 ##### Nu skall vi utföra sökningar på vår data.
-Skriv en fråga i MySQL som hämtar alla bank-konton som är kopplade till “locations” där country är “SE”.
+##### Skriv en fråga i MySQL som hämtar alla bank-konton som är kopplade till “locations” där country är “SE”.
 ---
 ##### select first_name, last_name, address, country, location_ID, bankkonto_ID from locations, bank_accounts, relations where locations.id=relations.location_ID and country="SE" and bankkonto_ID=bank_accounts.id; \
 
