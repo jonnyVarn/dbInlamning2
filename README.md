@@ -46,3 +46,13 @@ LEFT JOIN locations AS lt ON br.location_ID=lt.id WHERE country="SE"; \
 ### Del 4
 Nu skall du visa förståelse på CRUD.
 Skriv i din rapport, exempel på MongoDB och SQL frågor som är av karaktärerna:
+
+
+### Frågor
+1. Vad är motsvarigheten i MongoDB till en foreign key?
+2. Vad är motsvarigheten till en SELECT i MongoDB?
+3. Hur hade du löst del 2 och 3 i MongoDB? (du behöver inte göra en komplett lösning,
+men beskriv på ett ungefär hur du hade gjort)
+4. Vad behöver du för information för att kunna logga in i någon annans databas?
+5. Varför skulle man vilja använda sig utav en databas?
+6. Nämn några andra ställen / situationer utöver databaser som CRUD används
