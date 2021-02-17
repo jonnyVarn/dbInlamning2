@@ -46,7 +46,10 @@ LEFT JOIN locations AS lt ON br.location_ID=lt.id WHERE country="SE"; \
 ### Del 4
 Nu skall du visa förståelse på CRUD.
 Skriv i din rapport, exempel på MongoDB och SQL frågor som är av karaktärerna:
-
+1. Create
+2. Read
+3. Update
+4. Delete
 
 ### Frågor
 1. Vad är motsvarigheten i MongoDB till en foreign key?
