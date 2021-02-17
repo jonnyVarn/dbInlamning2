@@ -6,9 +6,10 @@
 ---
 ### MongoDB
 
-#### 2: \
+#### 2: 
 Skapa upp en till tabell i MySQL / MariaDB.
 ---
+#####
 CREATE TABLE relations (
 location_ID int PRIMARY KEY NOT NULL, 
 bankkonto_ID int UNIQUE NOT NULL, 
