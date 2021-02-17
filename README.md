@@ -43,3 +43,6 @@ SELECT * FROM bank_accounts AS ba LEFT JOIN relations AS br on ba.id=br.bankkont
 LEFT JOIN locations AS lt ON br.location_ID=lt.id WHERE country="SE"; \
 
 
+### Del 4
+Nu skall du visa förståelse på CRUD.
+Skriv i din rapport, exempel på MongoDB och SQL frågor som är av karaktärerna:
