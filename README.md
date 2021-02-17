@@ -30,8 +30,7 @@ select * from locations; \
 |  3 | US      | Comet road 42    | \
 |  4 | SE      | Brunnsgatan 7    | \
 
-
-insert into relations (location_ID, bankkonto_ID) values (55,4), (89, 2), (174, 1),  (170, 3); \
+###### insert into relations (location_ID, bankkonto_ID) values (55,4), (89, 2), (174, 1),  (170, 3); 
 
 select first_name, last_name, address, country, location_ID, bankkonto_ID from locations, bank_accounts, relations where locations.id=relations.location_ID and country="SE" and bankkonto_ID=bank_accounts.id; \
 
