@@ -21,7 +21,7 @@ SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or 
 | 170 | Ingunna    | Castellucci |  471372 | \
 | 174 | Eldon      | McCartan    |   75096 | \
 
-select * from locations; \
+SELECT * FROM locations; \
 +----+---------+------------------+ \
 | id | country | address          | \
 +----+---------+------------------+ \
@@ -30,12 +30,12 @@ select * from locations; \
 |  3 | US      | Comet road 42    | \
 |  4 | SE      | Brunnsgatan 7    | \
 
-###### insert into relations (location_ID, bankkonto_ID) values (55,4), (89, 2), (174, 1),  (170, 3); 
+###### INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3); 
 
 select first_name, last_name, address, country, location_ID, bankkonto_ID from locations, bank_accounts, relations where locations.id=relations.location_ID and country="SE" and bankkonto_ID=bank_accounts.id; \
 
 alternativt: \
-select * from bank_accounts as ba LEFT JOIN relations as br on ba.id=br.bankkonto_ID \
-LEFT JOIN locations as lt on br.location_ID=lt.id where country="SE"; \
+SELECT * FROM bank_accounts AS ba LEFT JOIN relations AS br on ba.id=br.bankkonto_ID \
+LEFT JOIN locations AS lt ON br.location_ID=lt.id WHERE country="SE"; \
 
 
