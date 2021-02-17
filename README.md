@@ -2,13 +2,12 @@
 
 ### MySQL 
 #### 1: \
-insert into locations (country, address) values ("SE", "Vimmerbygatan 20"), ("US", "Asteroid road 5"), ("US", "Comet road 42"), ("SE", "Brunnsgatan 7");
+#### insert into locations (country, address) values ("SE", "Vimmerbygatan 20"), ("US", "Asteroid road 5"), ("US", "Comet road 42"), ("SE", "Brunnsgatan 7");
 varchar(256));
 ---
 ### MongoDB
 
-### 
-2: \
+#### 2: \
 Skapa upp en till tabell i MySQL / MariaDB.
 ---
 CREATE TABLE relations (
