@@ -9,8 +9,7 @@
 #### 2: 
 Skapa upp en till tabell i MySQL / MariaDB.
 ---
-#####
-CREATE TABLE relations (
+##### CREATE TABLE relations ( 
 location_ID int PRIMARY KEY NOT NULL, 
 bankkonto_ID int UNIQUE NOT NULL, 
 FOREIGN KEY (location_ID) REFERENCES locations(id), 
