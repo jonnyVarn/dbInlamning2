@@ -39,6 +39,13 @@ db.banker.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_nam
 { "_id" : ObjectId("602a111b9c99542f1ba383c1"), "first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998" } \
 { "_id" : ObjectId("602a11339c99542f1ba383c2"), "first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881" } \
 
+db.locations.find(); \
+{ "_id" : ObjectId("601f3493bd1041f8f16667ff"), "Country" : "SE", "address" : "vimmerbygatan 20" } \
+{ "_id" : ObjectId("601f3493bd1041f8f1666800"), "Country" : "US", "address" : "Asteroid road 5" } \
+{ "_id" : ObjectId("601f3493bd1041f8f1666801"), "Country" : "US", "address" : "Comet road 41" } \
+{ "_id" : ObjectId("601f3493bd1041f8f1666802"), "Country" : "SE", "address" : "Brunnsgatan 7" } \
+
+
 db.createCollection("relations")
 
 
