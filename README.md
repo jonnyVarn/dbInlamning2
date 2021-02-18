@@ -34,10 +34,10 @@ SELECT * FROM locations; \
 
 #### 2 skapa upp en tabell i MongoDB
 db.banker.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});  \
-{ "_id" : ObjectId("602a10ca9c99542f1ba383bf"), "first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999" }
-{ "_id" : ObjectId("602a11079c99542f1ba383c0"), "first_name" : "Vanya", "last_name" : "Worsell", "holding" : "9997" }
-{ "_id" : ObjectId("602a111b9c99542f1ba383c1"), "first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998" }
-{ "_id" : ObjectId("602a11339c99542f1ba383c2"), "first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881" }
+{ "_id" : ObjectId("602a10ca9c99542f1ba383bf"), "first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999" } \
+{ "_id" : ObjectId("602a11079c99542f1ba383c0"), "first_name" : "Vanya", "last_name" : "Worsell", "holding" : "9997" } \
+{ "_id" : ObjectId("602a111b9c99542f1ba383c1"), "first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998" } \
+{ "_id" : ObjectId("602a11339c99542f1ba383c2"), "first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881" } \
 
 db.createCollection("relations")
 
