@@ -30,7 +30,18 @@ SELECT * FROM locations; \
 |  3 | US      | Comet road 42    | \
 |  4 | SE      | Brunnsgatan 7    | \
 
-###### INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3); 
+###### INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3);
+
+#### 2 skapa upp en tabell i MongoDB
+db.banker.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});
+{ "_id" : ObjectId("602a10ca9c99542f1ba383bf"), "first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999" }
+{ "_id" : ObjectId("602a11079c99542f1ba383c0"), "first_name" : "Vanya", "last_name" : "Worsell", "holding" : "9997" }
+{ "_id" : ObjectId("602a111b9c99542f1ba383c1"), "first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998" }
+{ "_id" : ObjectId("602a11339c99542f1ba383c2"), "first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881" }
+
+db.createCollection("relations")
+
+
 
 ### Del 3
 ##### Nu skall vi utföra sökningar på vår data.
