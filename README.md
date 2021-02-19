@@ -154,7 +154,7 @@ db.relations.find().pretty();
 INSERT INTO locations (countrycode, address) VALUES ("SE", "Dalavägen 13");
 ```
 ```javascript
-db.relations.remove("");
+db.bank_account.update({"_id" : ObjectId("601bce6e283d5120f20e1a68")}, {$set: {"holding": 888} });
 ```
 4. Delete
 ```sql
