@@ -74,12 +74,44 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 ```
 --
 ```javascript
- db.locations.InsertMany([
-{"Country" : "SE", "address" : "vimmerbygatan 20" $ref: "bank_account", $id: ObjectId("602a111b9c99542f1ba383c1") },
-{"Country" : "US", "address" : "Asteroid road 5"  $ref: "bank_account", $id: ObjectId("602a11079c99542f1ba383c0") }, 
-{"Country" : "US", "address" : "Comet road 41" $ref: "bank_account", $id:  ObjectId("602a11339c99542f1ba383c2")}, 
-{"Country" : "SE", "address" : "Brunnsgatan 7" $ref: "bank_account", $id:  ObjectId("602a10ca9c99542f1ba383bf")},
-])
+ db.locations.insertMany([
+...     {
+...         "country": "SE",
+...         "Address": "Vimmerbygatan 20",
+...         bankID:
+...         {
+...             $ref:  "bank_accounts",
+...             $id: ObjectId("602a111b9c99542f1ba383c1")
+...         }
+...     },
+...     {
+...         "country": "US",
+...         "Address": "Asteroid road 5",
+...         bankID:
+...         {
+...             $ref: "bank_accounts",
+...             $id: ObjectId("602a11079c99542f1ba383c0")
+...         },
+...     },
+...     {
+...         "country": "US",
+...         "Address": "Comet road 41",
+...          bankID:
+...         {
+...             $ref: "bank_accounts",
+...             $id: ObjectId("602a11339c99542f1ba383c2")
+...         },
+...     },
+...     {
+...         "country": "SE",
+...         "Address": "Brunnsgatan 7",
+...          bankID:
+...         {
+...             $ref: "bank_accounts",
+...             $id: ObjectId("602a10ca9c99542f1ba383bf")
+...         },
+...     }
+... ])
 ```
 -----
 
