@@ -61,9 +61,9 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 ```javascript
  db.bank_accounts.insertOne({"first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999"}) \ db.bank_accounts.insertOne({"first_name":"first_name" : "Vanya", "last_name" : "Worsell", "holding" : "9997"}) \ db.bank_accounts.insertOne({"first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998"}) \ db.bank_accounts.insertOne({"first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881"})
  ´´´´
------ 
-and then again:
------
+-- 
+###### and then again:
+--
 ```javascript
  db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});  \
 
