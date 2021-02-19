@@ -20,7 +20,7 @@ SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or 
 |  89 | Vanya      | Worsell     |  330641 | \
 | 170 | Ingunna    | Castellucci |  471372 | \
 | 174 | Eldon      | McCartan    |   75096 | \
-
+---
 SELECT * FROM locations; \
 +----+---------+------------------+ \
 | id | country | address          | \
