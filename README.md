@@ -151,7 +151,7 @@ db.relations.find().pretty();
 ```
 3. Update
 ```sql
-INSERT INTO locations (countrycode, address) VALUES ("SE", "Dalavägen 13");
+UPDATE bank_accounts SET holding=1 where id=1;
 ```
 ```javascript
 db.bank_account.update({"_id" : ObjectId("601bce6e283d5120f20e1a68")}, {$set: {"holding": 888} });
