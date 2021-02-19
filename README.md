@@ -1,16 +1,16 @@
  inlämningsuppgift 2
-----
+-----
  MySQL 
  1:
  insert into locations (country, address) values ("SE", "Vimmerbygatan 20"), ("US", "Asteroid road 5"), ("US", "Comet road 42"), ("SE", "Brunnsgatan 7");
----
+-----
 MongoDB
  db.locations.insertMany([{"Country":"SE"}, {"address":"vimmerbygatan 20"}, {"Country":"US"}, {"address":"Asteroid road 5"}, {"Country": "US"}, {"address":"Comet road 41"},  {"Country": "SE"}, {"address":"Brunnsgatan 7"} ]);
  2: 
 Skapa upp en till tabell i MySQL / MariaDB.
----
+-----
 CREATE TABLE relations ( location_ID int PRIMARY KEY NOT NULL, bankkonto_ID int UNIQUE NOT NULL, FOREIGN KEY (location_ID) REFERENCES locations(id), FOREIGN KEY (bankkonto_ID) REFERENCES bank_accounts(id));
----
+-----
 
 SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or first_name="Eldon" or first_name="Ingunna"; 
  +-----+------------+-------------+---------+  
@@ -20,7 +20,7 @@ SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or 
  |  89 | Vanya      | Worsell     |  330641 |  
  | 170 | Ingunna    | Castellucci |  471372 |  
  | 174 | Eldon      | McCartan    |   75096 | 
----
+-----
 SELECT * FROM locations; \
 +----+---------+------------------+ \
 | id | country | address          | \
@@ -29,19 +29,19 @@ SELECT * FROM locations; \
 |  2 | US      | Asteroid road 5  | \
 |  3 | US      | Comet road 42    | \
 |  4 | SE      | Brunnsgatan 7    | 
----
+-----
 INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3);
----
+-----
  2 skapa upp en tabell i MongoDB
----
+-----
 db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});  
----
+-----
  resulted in nothing so i created the users:
----
+-----
  db.bank_accounts.insertOne({"first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999"}) \ db.bank_accounts.insertOne({"first_name":"first_name" : "Vanya", "last_name" : "Worsell", "holding" : "9997"}) \ db.bank_accounts.insertOne({"first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998"}) \ db.bank_accounts.insertOne({"first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881"})
---- 
+----- 
 and then again:
----
+-----
  db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});  \
 
 { "_id" : ObjectId("602a10ca9c99542f1ba383bf"), "first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999" } \
@@ -55,7 +55,7 @@ and then again:
 {"Country" : "US", "address" : "Comet road 41" $ref: "bank_account", $id:  ObjectId("602a11339c99542f1ba383c2")}, 
 {"Country" : "SE", "address" : "Brunnsgatan 7" $ref: "bank_account", $id:  ObjectId("602a10ca9c99542f1ba383bf")},
 ])
----
+-----
 
 not necessary for mongo db.createCollection("relations")
 
@@ -64,7 +64,7 @@ not necessary for mongo db.createCollection("relations")
  Del 3
  Nu skall vi utföra sökningar på vår data.
  Skriv en fråga i MySQL som hämtar alla bank-konton som är kopplade till “locations” där country är “SE”.
----
+-----
  select first_name, last_name, address, country, location_ID, bankkonto_ID from locations, bank_accounts, relations where locations.id=relations.location_ID and country="SE" and bankkonto_ID=bank_accounts.id; \
 
 alternativt: \
