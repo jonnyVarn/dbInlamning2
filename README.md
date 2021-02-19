@@ -51,6 +51,7 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 ----- 
 and then again:
 -----
+```javascript
  db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});  \
 
 { "_id" : ObjectId("602a10ca9c99542f1ba383bf"), "first_name" : "Corbin", "last_name" : "Hauck", "holding" : "9999" } \
@@ -64,6 +65,7 @@ and then again:
 {"Country" : "US", "address" : "Comet road 41" $ref: "bank_account", $id:  ObjectId("602a11339c99542f1ba383c2")}, 
 {"Country" : "SE", "address" : "Brunnsgatan 7" $ref: "bank_account", $id:  ObjectId("602a10ca9c99542f1ba383bf")},
 ])
+```
 -----
 
 not necessary for mongo db.createCollection("relations")
