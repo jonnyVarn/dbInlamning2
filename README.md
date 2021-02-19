@@ -114,8 +114,10 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 ... ])
 ```
 -----
-
-
+db.locations.find({"country":"SE"});
+{ "_id" : ObjectId("602b0b95a16a1ffdd4c86aa2"), "country" : "SE", "Address" : "Vimmerbygatan 20", "person" : DBRef("banker", ObjectId("602a111b9c99542f1ba383c1")) }
+{ "_id" : ObjectId("602b0b95a16a1ffdd4c86aa5"), "country" : "SE", "Address" : "Brunnsgatan 7", "person" : DBRef("banker", ObjectId("602a10ca9c99542f1ba383bf")) }
+---
 
 
 
