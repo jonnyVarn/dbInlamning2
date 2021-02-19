@@ -3,7 +3,7 @@
  MySQL 
  1:
  insert into locations (country, address) values ("SE", "Vimmerbygatan 20"), ("US", "Asteroid road 5"), ("US", "Comet road 42"), ("SE", "Brunnsgatan 7");
------
+-
 MongoDB
  db.locations.insertMany([{"Country":"SE"}, {"address":"vimmerbygatan 20"}, {"Country":"US"}, {"address":"Asteroid road 5"}, {"Country": "US"}, {"address":"Comet road 41"},  {"Country": "SE"}, {"address":"Brunnsgatan 7"} ]);
  2: 
