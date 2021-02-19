@@ -34,7 +34,7 @@ SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or 
 ```
 -----
 ```sql
-SELECT * FROM locations; \
+SELECT * FROM locations; 
 +----+---------+------------------+ 
 | id | country | address          | 
 +----+---------+------------------+ 
