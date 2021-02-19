@@ -41,7 +41,9 @@ INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 
 -----
  2 skapa upp en tabell i MongoDB
 -----
+```javascript
 db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"first_name":"Eldon"}, {"first_name":"Ingunna"} ]});  
+```
 -----
  resulted in nothing so i created the users:
 -----
