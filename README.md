@@ -157,11 +157,11 @@ UPDATE bank_accounts SET holding=1 where id=1;
 db.bank_account.update({"_id" : ObjectId("601bce6e283d5120f20e1a68")}, {$set: {"holding": 888} });
 ```
 4. Delete
-```sql
-delete * from relations;
+```sql  
+DELETE FROM bank_accounts WHERE ID=1;
 ```
 ```javascript
-db.relations.remove("");
+db.bank_account.remove({"first_name" : "Anders"});
 ```
  Frågor
 1. Vad är motsvarigheten i MongoDB till en foreign key?
