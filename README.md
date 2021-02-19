@@ -44,7 +44,9 @@ SELECT * FROM locations;
 |  4 | SE      | Brunnsgatan 7    |
 ```
 -----
+```sql
 INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3);
+```
 -----
  2 skapa upp en tabell i MongoDB
 -----
