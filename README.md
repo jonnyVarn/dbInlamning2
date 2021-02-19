@@ -49,11 +49,11 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 { "_id" : ObjectId("602a111b9c99542f1ba383c1"), "first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998" } \
 { "_id" : ObjectId("602a11339c99542f1ba383c2"), "first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881" } \
 ---
-db.locations.UpdateMany([
-{ "_id" : ObjectId("601f3493bd1041f8f16667ff"), "Country" : "SE", "address" : "vimmerbygatan 20" $ref: "bank_account", $id: ObjectId("602a111b9c99542f1ba383c1") },
-{ "_id" : ObjectId("601f3493bd1041f8f1666800"), "Country" : "US", "address" : "Asteroid road 5"  $ref: "bank_account", $id: ObjectId("602a11079c99542f1ba383c0") }, 
-{ "_id" : ObjectId("601f3493bd1041f8f1666801"), "Country" : "US", "address" : "Comet road 41" $ref: "bank_account", $id:  ObjectId("602a11339c99542f1ba383c2")}, 
-{ "_id" : ObjectId("601f3493bd1041f8f1666802"), "Country" : "SE", "address" : "Brunnsgatan 7" $ref: "bank_account", $id:  ObjectId("602a10ca9c99542f1ba383bf")},
+db.locations.InsertMany([
+{"Country" : "SE", "address" : "vimmerbygatan 20" $ref: "bank_account", $id: ObjectId("602a111b9c99542f1ba383c1") },
+{"Country" : "US", "address" : "Asteroid road 5"  $ref: "bank_account", $id: ObjectId("602a11079c99542f1ba383c0") }, 
+{"Country" : "US", "address" : "Comet road 41" $ref: "bank_account", $id:  ObjectId("602a11339c99542f1ba383c2")}, 
+{"Country" : "SE", "address" : "Brunnsgatan 7" $ref: "bank_account", $id:  ObjectId("602a10ca9c99542f1ba383bf")},
 ])
 ---
 
