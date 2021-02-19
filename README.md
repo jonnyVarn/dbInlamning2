@@ -5,7 +5,9 @@
 -
  MySQL 
  1:
+ ```sql
  insert into locations (country, address) values ("SE", "Vimmerbygatan 20"), ("US", "Asteroid road 5"), ("US", "Comet road 42"), ("SE", "Brunnsgatan 7");
+ ```
 -
 MongoDB
  ```javascript
@@ -16,9 +18,11 @@ MongoDB
  2: 
 Skapa upp en till tabell i MySQL / MariaDB.
 -----
+```sql
 CREATE TABLE relations ( location_ID int PRIMARY KEY NOT NULL, bankkonto_ID int UNIQUE NOT NULL, FOREIGN KEY (location_ID) REFERENCES locations(id), FOREIGN KEY (bankkonto_ID) REFERENCES bank_accounts(id));
+```
 -----
-
+```sql
 SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or first_name="Eldon" or first_name="Ingunna"; 
  +-----+------------+-------------+---------+  
  | id  | first_name | last_name   | holding |  
@@ -27,7 +31,9 @@ SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or 
  |  89 | Vanya      | Worsell     |  330641 |  
  | 170 | Ingunna    | Castellucci |  471372 |  
  | 174 | Eldon      | McCartan    |   75096 | 
+```
 -----
+```sql
 SELECT * FROM locations; \
 +----+---------+------------------+ \
 | id | country | address          | \
@@ -35,7 +41,8 @@ SELECT * FROM locations; \
 |  1 | SE      | Vimmerbygatan 20 | \
 |  2 | US      | Asteroid road 5  | \
 |  3 | US      | Comet road 42    | \
-|  4 | SE      | Brunnsgatan 7    | 
+|  4 | SE      | Brunnsgatan 7    |
+```
 -----
 INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3);
 -----
