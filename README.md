@@ -35,12 +35,12 @@ SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or 
 -----
 ```sql
 SELECT * FROM locations; \
-+----+---------+------------------+ \
-| id | country | address          | \
-+----+---------+------------------+ \
-|  1 | SE      | Vimmerbygatan 20 | \
-|  2 | US      | Asteroid road 5  | \
-|  3 | US      | Comet road 42    | \
++----+---------+------------------+ 
+| id | country | address          | 
++----+---------+------------------+ 
+|  1 | SE      | Vimmerbygatan 20 | 
+|  2 | US      | Asteroid road 5  | 
+|  3 | US      | Comet road 42    | 
 |  4 | SE      | Brunnsgatan 7    |
 ```
 -----
