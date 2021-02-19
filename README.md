@@ -123,12 +123,14 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
  Nu skall vi utföra sökningar på vår data.
  Skriv en fråga i MySQL som hämtar alla bank-konton som är kopplade till “locations” där country är “SE”.
 -----
+```sql
  select first_name, last_name, address, country, location_ID, bankkonto_ID from locations, bank_accounts, relations where locations.id=relations.location_ID and country="SE" and bankkonto_ID=bank_accounts.id; \
-
-alternativt: \
+```
+alternativt:
+```sql
 SELECT * FROM bank_accounts AS ba LEFT JOIN relations AS br on ba.id=br.bankkonto_ID \
 LEFT JOIN locations AS lt ON br.location_ID=lt.id WHERE country="SE"; \
-
+```
 
  Del 4
 Nu skall du visa förståelse på CRUD.
