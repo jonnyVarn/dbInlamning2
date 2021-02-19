@@ -71,7 +71,9 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 { "_id" : ObjectId("602a11079c99542f1ba383c0"), "first_name" : "Vanya", "last_name" : "Worsell", "holding" : "9997" } \
 { "_id" : ObjectId("602a111b9c99542f1ba383c1"), "first_name" : "Eldon", "last_name" : "McCartan", "holding" : "9998" } \
 { "_id" : ObjectId("602a11339c99542f1ba383c2"), "first_name" : "Ingunna", "last_name" : "Castellucci", "holding" : "8881" } \
----
+```
+--
+```javascript
  db.locations.InsertMany([
 {"Country" : "SE", "address" : "vimmerbygatan 20" $ref: "bank_account", $id: ObjectId("602a111b9c99542f1ba383c1") },
 {"Country" : "US", "address" : "Asteroid road 5"  $ref: "bank_account", $id: ObjectId("602a11079c99542f1ba383c0") }, 
