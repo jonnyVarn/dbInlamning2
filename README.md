@@ -201,7 +201,7 @@ HTTP (POST, GET, PUT, and DELETE), FILSYSTEM Create, Read, Update and Delete etc
 
 ```text
 Rapport Inlämning2:
-Jag lägger i MySQL in i tabellen locations genom att i terminalen skriva mysql -u root -p.
+Jag lägger i MySQL in i tabellen locations genom att ssh:a in i en linux burk som har ip 192.168.1.135 där jag i förväg installerat mariadb-server med hjälp av apt install mariadb-server och systemctl enable mysql och systemctl start mysql och mysql_secure installation eftersom detta redan är färdigt så skriver jag i terminalen mysql -u root -p.
 Jag skriver use bank_accounts; och sedan 
 insert into locations (country, address) values ("SE", "Vimmerbygatan 20"), ("US", "Asteroid road 5"), ("US", "Comet road 42"), ("SE", "Brunnsgatan 7");
 för att sätta in värden i tabellen locations.
