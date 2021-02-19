@@ -13,7 +13,14 @@ Skapa upp en till tabell i MySQL / MariaDB.
 ---
 
 ##### SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or first_name="Eldon" or first_name="Ingunna"; 
-##### +-----+------------+-------------+---------+ \ | id  | first_name | last_name   | holding | \ +-----+------------+-------------+---------+ \ |  55 | Corbin     | Hauck       |  449092 | \ |  89 | Vanya      | Worsell     |  330641 | \ | 170 | Ingunna    | Castellucci |  471372 | \ | 174 | Eldon      | McCartan    |   75096 | \
+##### 
++-----+------------+-------------+---------+ \ 
+| id  | first_name | last_name   | holding | \ 
++-----+------------+-------------+---------+ \ 
+|  55 | Corbin     | Hauck       |  449092 | \ 
+|  89 | Vanya      | Worsell     |  330641 | \ 
+| 170 | Ingunna    | Castellucci |  471372 | \ 
+| 174 | Eldon      | McCartan    |   75096 | \
 ---
 SELECT * FROM locations; \
 +----+---------+------------------+ \
