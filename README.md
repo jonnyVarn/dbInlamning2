@@ -165,9 +165,20 @@ db.bank_account.remove({"first_name" : "Anders"});
 ```
  Frågor
 1. Vad är motsvarigheten i MongoDB till en foreign key?
+DBRefs or manual references.
 2. Vad är motsvarigheten till en SELECT i MongoDB?
+db.collection.find()
 3. Hur hade du löst del 2 och 3 i MongoDB? (du behöver inte göra en komplett lösning,
 men beskriv på ett ungefär hur du hade gjort)
+DBRef eller manuell reference. Jag försöker få till det men jag har lite feber ;)
+
 4. Vad behöver du för information för att kunna logga in i någon annans databas?
+Ip eller hostname username password och portnummer eventuellt databas namn som jag har tillgång till.
+
 5. Varför skulle man vilja använda sig utav en databas?
+För att enkelt kunna komma åt data sortera, ändra etc.
+
+
 6. Nämn några andra ställen / situationer utöver databaser som CRUD används
+HTTP (POST, GET, PUT, and DELETE), FILSYSTEM Create, Read, Update and Delete etc. 
+
