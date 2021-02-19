@@ -143,11 +143,26 @@ create database locations (countrycode varchar(2), address varchar(50));
 db.createCollection("relations")
 ```
 2. Read
-
+```sql
+SELECT * FROM RELATIONS;
+```
+```javascript
+db.relations.find().pretty();
+```
 3. Update
-
+```sql
+INSERT INTO locations (countrycode, address) VALUES ("SE", "Dalavägen 13");
+```
+```javascript
+db.relations.remove("");
+```
 4. Delete
-
+```sql
+delete * from relations;
+```
+```javascript
+db.relations.remove("");
+```
  Frågor
 1. Vad är motsvarigheten i MongoDB till en foreign key?
 2. Vad är motsvarigheten till en SELECT i MongoDB?
