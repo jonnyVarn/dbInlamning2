@@ -2,11 +2,7 @@
 
  
  inlämningsuppgift 2
- ```text
- Jag lägger i MySQL in i tabellen locations genom att i terminalen skriva mysql -u root -p.
-Jag skriver use bank_accounts; och sedan för att insert sätta in värden i tabellen locations. 
 
- ```
 -
  MySQL 
  1:
