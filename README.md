@@ -45,7 +45,7 @@ SELECT * FROM locations;
 ```
 -----
 ```sql
-INSERT INTO relations (location_ID, bankkonto_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3);
+INSERT INTO relations (bankkonto_ID, location_ID) VALUES (55,4), (89, 2), (174, 1),  (170, 3);
 ```
 -----
  2 skapa upp en tabell i MongoDB
