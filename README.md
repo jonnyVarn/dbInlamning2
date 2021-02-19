@@ -180,7 +180,7 @@ db.collection.find()
 ```
 3. Hur hade du löst del 2 och 3 i MongoDB? (du behöver inte göra en komplett lösning,
 men beskriv på ett ungefär hur du hade gjort)
-DBRef eller manuell reference. Jag försöker få till det men jag har lite feber ;)
+DBRef eller manuell reference. Enligt Mongo ovan.
 
 4. Vad behöver du för information för att kunna logga in i någon annans databas?
 Ip eller hostname username password och portnummer eventuellt databas namn som jag har tillgång till.
