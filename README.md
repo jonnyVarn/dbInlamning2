@@ -165,9 +165,14 @@ db.bank_account.remove({"first_name" : "Anders"});
 ```
  Frågor
 1. Vad är motsvarigheten i MongoDB till en foreign key?
+--
 DBRefs or manual references.
+--
 2. Vad är motsvarigheten till en SELECT i MongoDB?
+--
+```javascript
 db.collection.find()
+```
 3. Hur hade du löst del 2 och 3 i MongoDB? (du behöver inte göra en komplett lösning,
 men beskriv på ett ungefär hur du hade gjort)
 DBRef eller manuell reference. Jag försöker få till det men jag har lite feber ;)
