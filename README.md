@@ -12,7 +12,7 @@ Skapa upp en till tabell i MySQL / MariaDB.
 ##### CREATE TABLE relations ( location_ID int PRIMARY KEY NOT NULL, bankkonto_ID int UNIQUE NOT NULL, FOREIGN KEY (location_ID) REFERENCES locations(id), FOREIGN KEY (bankkonto_ID) REFERENCES bank_accounts(id));
 ---
 
-##### SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or first_name="Eldon" or first_name="Ingunna"; \
+##### SELECT  * FROM bank_accounts WHERE first_name="Corbin" or first_name="Vanya" or first_name="Eldon" or first_name="Ingunna"; 
 +-----+------------+-------------+---------+ \
 | id  | first_name | last_name   | holding | \
 +-----+------------+-------------+---------+ \
