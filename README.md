@@ -115,7 +115,7 @@ db.bank_accounts.find({$or:[{"first_name":"Corbin"}, {"first_name":"Vanya"},{"fi
 ```
 -----
 
-not necessary for mongo db.createCollection("relations")
+
 
 
 
@@ -134,8 +134,16 @@ LEFT JOIN locations AS lt ON br.location_ID=lt.id WHERE country="SE"; \
 Nu skall du visa förståelse på CRUD.
 Skriv i din rapport, exempel på MongoDB och SQL frågor som är av karaktärerna:
 1. Create
+```sql
+create database locations (countrycode varchar(2), address varchar(50));
+```
+```javascript
+db.createCollection("relations")
+```
 2. Read
+
 3. Update
+
 4. Delete
 
  Frågor
